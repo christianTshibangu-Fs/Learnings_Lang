@@ -42,8 +42,9 @@ fn main() {
     let c ='C';
     let z: char = 'Z';
     let nom = "christian";
+    let nom2: &str ="marie";
     let cat = '😻';
-    println!("variable char : {c}, {z}, {cat}, {nom}");
+    println!("variable char : {c}, {z}, {cat}, {nom} {nom2}");
 
     println!("--------------------------FIN TYPE DE DONNEE---------------------");
 

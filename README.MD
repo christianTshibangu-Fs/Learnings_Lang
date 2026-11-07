@@ -51,6 +51,49 @@ CARGO le gestionnaire du language Rust (comme pypi en python)
 - **let mut**   : déclarer la variable modifiable
 -- **const**    : déclarer une variable constante
 
+**SYNTAXE VARIABLE**
+- variable est immunatable par défaut (non modifiable)
+    ex: let x = 4
+- variable peut devenir mutable (modifiable), si on ajoute **mut** devant **let**
+    ex: let **mut** x = 4
+        x = 6 // 
+- variable constate, non seulement par défaut elle est immutable mais elle demeure ainsi. Déclaration:  "**const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;**"
+
+**TYPE DE VARIABLE**
+
+- let entier: u8 = 12; variable entier, declarer avec u/i 8,16,32,64.
+- let flotte: f32 = 3.9;
+- let z: char = 'Z';
+- let nom = "christian";
+- let nom: &str = "marie";
+- let faux: bool = false;
+
+-Tuple : est une manière générale de regrouper un certain nombre de valeurs avec un **variété de types**; type composé.
+    - let tup: (i32, f64, u8) = (500, 6.4, 1); manipuler let (x, y, z) = tup;
+    - let tup = (500, 6.4, 1); manipuler let six_point_four = x.1;
+
+-tableau :  d’avoir toujours un nombre fixe d’éléments
+    - let a: [i32; 5] = [1, 2, 3, 4, 5];
+    - let a = [3; 5]; ou let a = [3, 3, 3, 3, 3];
+    - manipuler : let second = a[1];
+
+
+
+**Utisation de fonction en Rust**
+
+- **fn another_fonction(){}** : declarer une fonction
+- **another_fonction()** : faire appele à la fonction
+- **fn another_fonction(x: u8)**: declarer une fonction avec argument, il faut preciser le type de l'argument
+- **fn another_fonction(x:u8, unite:char){}** : déclarer une fonction avec plusieurs arguments
+- **fonction enoncer et expression :
+    let y = {
+        let y = 3;
+        y +2 // la derniere ligne n'a pas point virgule (return)
+    };
+-fonction avec valeur de retour
+    fn plus_one(x: i32) -> **i32** {  //i32 type de retour
+        x + 1 // valeur retour
+    }
 
 
 

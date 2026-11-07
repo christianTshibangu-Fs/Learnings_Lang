@@ -22,6 +22,7 @@
 - let flotte: f32 = 3.9;
 - let z: char = 'Z';
 - let nom = "christian";
+- let nom: &str = "marie";
 - let faux: bool = false;
 
 -Tuple : est une manière générale de regrouper un certain nombre de valeurs avec un **variété de types**; type composé.
