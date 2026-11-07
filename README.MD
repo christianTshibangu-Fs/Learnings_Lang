@@ -40,11 +40,17 @@ CARGO le gestionnaire du language Rust (comme pypi en python)
 
 - **cargo build --release** : compile avec des optimisations et construit pour le version final en production
 
+- **rustc --explain *E0384*** : expliquer le code d'erreur dans le terminal pour deboger 
+
 
 **SYNTAXE RUST**
 
-- **use** : pour importer
--**loop** : pour le boucle
+- **use**       : pour importer
+- **loop**      : pour le boucle
+- **let**       : déclarer une variable (non modifiable)
+- **let mut**   : déclarer la variable modifiable
+-- **const**    : déclarer une variable constante
+
 
 
 
