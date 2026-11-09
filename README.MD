@@ -68,32 +68,64 @@ CARGO le gestionnaire du language Rust (comme pypi en python)
 - let nom: &str = "marie";
 - let faux: bool = false;
 
--Tuple : est une manière générale de regrouper un certain nombre de valeurs avec un **variété de types**; type composé.
+-**Tuple** : est une manière générale de regrouper un certain nombre de valeurs avec un **variété de types**; type composé.
     - let tup: (i32, f64, u8) = (500, 6.4, 1); manipuler let (x, y, z) = tup;
     - let tup = (500, 6.4, 1); manipuler let six_point_four = x.1;
 
--tableau :  d’avoir toujours un nombre fixe d’éléments
+-**tableau** :  d’avoir toujours un nombre fixe d’éléments
     - let a: [i32; 5] = [1, 2, 3, 4, 5];
     - let a = [3; 5]; ou let a = [3, 3, 3, 3, 3];
     - manipuler : let second = a[1];
 
-
-
-**Utisation de fonction en Rust**
+**SYNTAXE de fonction en Rust**
 
 - **fn another_fonction(){}** : declarer une fonction
 - **another_fonction()** : faire appele à la fonction
 - **fn another_fonction(x: u8)**: declarer une fonction avec argument, il faut preciser le type de l'argument
 - **fn another_fonction(x:u8, unite:char){}** : déclarer une fonction avec plusieurs arguments
-- **fonction enoncer et expression :
-    let y = {
-        let y = 3;
-        y +2 // la derniere ligne n'a pas point virgule (return)
-    };
--fonction avec valeur de retour
-    fn plus_one(x: i32) -> **i32** {  //i32 type de retour
-        x + 1 // valeur retour
-    }
+- **fonction enoncer et expression** :
+        let y = {
+            let y = 3;
+            y +2 // la derniere ligne n'a pas point virgule (return)
+        };
+- **fonction avec valeur de retour**
+        fn plus_one(x: i32) -> **i32** {  //i32 type de retour
+            x + 1 // valeur retour
+        }
 
 
+**FLUX DE CONTROLE EN RUST**
+
+- **if{} else{}** : déclarer une condition
+-  **let number = if condition { 5} else { 6 };** : if dans une instruction declarer let condition = 5
+- **loop{}** : declarer un loop
+    ex :     loop {
+                println!("boucle infinie {}", count);
+                count += 1;
+                if count == 100{
+                        break;
+                    }
+            }
+        - **loop dans une instruction**    let result = loop {
+                                                    count += 1;
+                                                    if count == 10{
+                                                        break;
+                                                    }
+                                                };
+                                            println!("boucle loop {}", count); 
+
+        - **loop avec label** voir (ex : fn loop_label())
+
+- **while**
+    ex :    let mut count = 5;
+            while count >= 0 {
+                println!("boucle while count {count}");
+                count -= 1;
+            }
+
+- **for**   
+    ex :        let tabs = [14, 28, 56, 98, 88, 98, 63, 19];
+                for tab in tabs {
+                    println!("parcourir le tab avec for {}",tab);
+                }
 
